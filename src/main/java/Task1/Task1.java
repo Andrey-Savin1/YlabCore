@@ -6,7 +6,7 @@ public class Task1 {
         int max = Integer.MIN_VALUE;
         int min = Integer.MAX_VALUE;
         int sum = 0;
-        int avg = 0;
+        double avg = 0;
         int count = 0;
 
         int[][] array = new int[6][6];
@@ -28,7 +28,7 @@ public class Task1 {
 
                 sum += ints[j];
 
-                avg = sum / count;
+                avg = (double) sum / count;
             }
         }
         System.out.println("Минимальное значение: " + min + "\n"+ "Максимальное значение: " + max + "\n" + "Среднее значение: " + avg);
